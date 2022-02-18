@@ -1,0 +1,756 @@
+Last login: Fri Feb 18 12:35:35 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % brew install git
+zsh: command not found: brew
+erika@Ezequiels-MacBook-Pro ~ % brew install git
+zsh: command not found: brew
+erika@Ezequiels-MacBook-Pro ~ % sudo brew install git
+Password:
+Sorry, try again.
+Password:
+sudo: brew: command not found
+erika@Ezequiels-MacBook-Pro ~ % install git
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+erika@Ezequiels-MacBook-Pro ~ % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+==> The following existing directories will be made group writable:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/share
+/usr/local/share/doc
+/usr/local/share/man
+/usr/local/share/man/man1
+/usr/local/share/man/man3
+/usr/local/share/man/man5
+/usr/local/share/man/man7
+==> The following existing directories will have their owner set to erika:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/share
+/usr/local/share/doc
+/usr/local/share/man
+/usr/local/share/man/man1
+/usr/local/share/man/man3
+/usr/local/share/man/man5
+/usr/local/share/man/man7
+==> The following existing directories will have their group set to admin:
+/usr/local/bin
+/usr/local/include
+/usr/local/lib
+/usr/local/share
+/usr/local/share/doc
+/usr/local/share/man
+/usr/local/share/man/man1
+/usr/local/share/man/man3
+/usr/local/share/man/man5
+/usr/local/share/man/man7
+==> The following new directories will be created:
+/usr/local/etc
+/usr/local/sbin
+/usr/local/var
+/usr/local/opt
+/usr/local/share/zsh
+/usr/local/share/zsh/site-functions
+/usr/local/var/homebrew
+/usr/local/var/homebrew/linked
+/usr/local/Cellar
+/usr/local/Caskroom
+/usr/local/Frameworks
+==> The Xcode Command Line Tools will be installed.
+
+Press RETURN to continue or any other key to abort:
+==> /usr/bin/sudo /bin/chmod u+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5 /usr/local/share/man/man7
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5 /usr/local/share/man/man7
+==> /usr/bin/sudo /usr/sbin/chown erika /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5 /usr/local/share/man/man7
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/include /usr/local/lib /usr/local/share /usr/local/share/doc /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5 /usr/local/share/man/man7
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod ug=rwx /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/chmod go-w /usr/local/share/zsh /usr/local/share/zsh/site-functions
+==> /usr/bin/sudo /usr/sbin/chown erika /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/etc /usr/local/sbin /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+==> /usr/bin/sudo /bin/mkdir -p /usr/local/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R erika:admin /usr/local/Homebrew
+==> /usr/bin/sudo /bin/mkdir -p /Users/erika/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/erika/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown -R erika /Users/erika/Library/Caches/Homebrew
+==> Searching online for the Command Line Tools
+==> /usr/bin/sudo /usr/bin/touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Installing Command Line Tools for Xcode-13.2
+==> /usr/bin/sudo /usr/sbin/softwareupdate -i Command\ Line\ Tools\ for\ Xcode-13.2
+Software Update Tool
+
+Finding available software
+
+Downloading Command Line Tools for Xcode
+brew install git                                                              m                  
+Downloaded Command Line Tools for Xcode
+Installing Command Line Tools for Xcode
+
+Done with Command Line Tools for Xcode
+Done.
+==> /usr/bin/sudo /usr/bin/xcode-select --switch /Library/Developer/CommandLineTools
+==> /usr/bin/sudo /bin/rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 203211, done.
+remote: Counting objects: 100% (81/81), done.
+remote: Compressing objects: 100% (68/68), done.
+remote: Total 203211 (delta 15), reused 69 (delta 10), pack-reused 203130
+Receiving objects: 100% (203211/203211), 55.65 MiB | 5.21 MiB/s, done.
+Resolving deltas: 100% (149770/149770), done.
+From https://github.com/Homebrew/brew
+ * [new branch]          dependabot/bundler/Library/Homebrew/sorbet-0.5.9663 -> origin/dependabot/bundler/Library/Homebrew/sorbet-0.5.9663
+ * [new branch]          dependabot/bundler/Library/Homebrew/tapioca-0.7.0   -> origin/dependabot/bundler/Library/Homebrew/tapioca-0.7.0
+ * [new branch]          fxcoudert-patch-1                                   -> origin/fxcoudert-patch-1
+ * [new branch]          master                                              -> origin/master
+ * [new tag]             0.1                                                 -> 0.1
+ * [new tag]             0.2                                                 -> 0.2
+ * [new tag]             0.3                                                 -> 0.3
+ * [new tag]             0.4                                                 -> 0.4
+ * [new tag]             0.5                                                 -> 0.5
+ * [new tag]             0.6                                                 -> 0.6
+ * [new tag]             0.7                                                 -> 0.7
+ * [new tag]             0.7.1                                               -> 0.7.1
+ * [new tag]             0.8                                                 -> 0.8
+ * [new tag]             0.8.1                                               -> 0.8.1
+ * [new tag]             0.9                                                 -> 0.9
+ * [new tag]             0.9.1                                               -> 0.9.1
+ * [new tag]             0.9.2                                               -> 0.9.2
+ * [new tag]             0.9.3                                               -> 0.9.3
+ * [new tag]             0.9.4                                               -> 0.9.4
+ * [new tag]             0.9.5                                               -> 0.9.5
+ * [new tag]             0.9.8                                               -> 0.9.8
+ * [new tag]             0.9.9                                               -> 0.9.9
+ * [new tag]             1.0.0                                               -> 1.0.0
+ * [new tag]             1.0.1                                               -> 1.0.1
+ * [new tag]             1.0.2                                               -> 1.0.2
+ * [new tag]             1.0.3                                               -> 1.0.3
+ * [new tag]             1.0.4                                               -> 1.0.4
+ * [new tag]             1.0.5                                               -> 1.0.5
+ * [new tag]             1.0.6                                               -> 1.0.6
+ * [new tag]             1.0.7                                               -> 1.0.7
+ * [new tag]             1.0.8                                               -> 1.0.8
+ * [new tag]             1.0.9                                               -> 1.0.9
+ * [new tag]             1.1.0                                               -> 1.1.0
+ * [new tag]             1.1.1                                               -> 1.1.1
+ * [new tag]             1.1.10                                              -> 1.1.10
+ * [new tag]             1.1.11                                              -> 1.1.11
+ * [new tag]             1.1.12                                              -> 1.1.12
+ * [new tag]             1.1.13                                              -> 1.1.13
+ * [new tag]             1.1.2                                               -> 1.1.2
+ * [new tag]             1.1.3                                               -> 1.1.3
+ * [new tag]             1.1.4                                               -> 1.1.4
+ * [new tag]             1.1.5                                               -> 1.1.5
+ * [new tag]             1.1.6                                               -> 1.1.6
+ * [new tag]             1.1.7                                               -> 1.1.7
+ * [new tag]             1.1.8                                               -> 1.1.8
+ * [new tag]             1.1.9                                               -> 1.1.9
+ * [new tag]             1.2.0                                               -> 1.2.0
+ * [new tag]             1.2.1                                               -> 1.2.1
+ * [new tag]             1.2.2                                               -> 1.2.2
+ * [new tag]             1.2.3                                               -> 1.2.3
+ * [new tag]             1.2.4                                               -> 1.2.4
+ * [new tag]             1.2.5                                               -> 1.2.5
+ * [new tag]             1.2.6                                               -> 1.2.6
+ * [new tag]             1.3.0                                               -> 1.3.0
+ * [new tag]             1.3.1                                               -> 1.3.1
+ * [new tag]             1.3.2                                               -> 1.3.2
+ * [new tag]             1.3.3                                               -> 1.3.3
+ * [new tag]             1.3.4                                               -> 1.3.4
+ * [new tag]             1.3.5                                               -> 1.3.5
+ * [new tag]             1.3.6                                               -> 1.3.6
+ * [new tag]             1.3.7                                               -> 1.3.7
+ * [new tag]             1.3.8                                               -> 1.3.8
+ * [new tag]             1.3.9                                               -> 1.3.9
+ * [new tag]             1.4.0                                               -> 1.4.0
+ * [new tag]             1.4.1                                               -> 1.4.1
+ * [new tag]             1.4.2                                               -> 1.4.2
+ * [new tag]             1.4.3                                               -> 1.4.3
+ * [new tag]             1.5.0                                               -> 1.5.0
+ * [new tag]             1.5.1                                               -> 1.5.1
+ * [new tag]             1.5.10                                              -> 1.5.10
+ * [new tag]             1.5.11                                              -> 1.5.11
+ * [new tag]             1.5.12                                              -> 1.5.12
+ * [new tag]             1.5.13                                              -> 1.5.13
+ * [new tag]             1.5.14                                              -> 1.5.14
+ * [new tag]             1.5.2                                               -> 1.5.2
+ * [new tag]             1.5.3                                               -> 1.5.3
+ * [new tag]             1.5.4                                               -> 1.5.4
+ * [new tag]             1.5.5                                               -> 1.5.5
+ * [new tag]             1.5.6                                               -> 1.5.6
+ * [new tag]             1.5.7                                               -> 1.5.7
+ * [new tag]             1.5.8                                               -> 1.5.8
+ * [new tag]             1.5.9                                               -> 1.5.9
+ * [new tag]             1.6.0                                               -> 1.6.0
+ * [new tag]             1.6.1                                               -> 1.6.1
+ * [new tag]             1.6.10                                              -> 1.6.10
+ * [new tag]             1.6.11                                              -> 1.6.11
+ * [new tag]             1.6.12                                              -> 1.6.12
+ * [new tag]             1.6.13                                              -> 1.6.13
+ * [new tag]             1.6.14                                              -> 1.6.14
+ * [new tag]             1.6.15                                              -> 1.6.15
+ * [new tag]             1.6.16                                              -> 1.6.16
+ * [new tag]             1.6.17                                              -> 1.6.17
+ * [new tag]             1.6.2                                               -> 1.6.2
+ * [new tag]             1.6.3                                               -> 1.6.3
+ * [new tag]             1.6.4                                               -> 1.6.4
+ * [new tag]             1.6.5                                               -> 1.6.5
+ * [new tag]             1.6.6                                               -> 1.6.6
+ * [new tag]             1.6.7                                               -> 1.6.7
+ * [new tag]             1.6.8                                               -> 1.6.8
+ * [new tag]             1.6.9                                               -> 1.6.9
+ * [new tag]             1.7.0                                               -> 1.7.0
+ * [new tag]             1.7.1                                               -> 1.7.1
+ * [new tag]             1.7.2                                               -> 1.7.2
+ * [new tag]             1.7.3                                               -> 1.7.3
+ * [new tag]             1.7.4                                               -> 1.7.4
+ * [new tag]             1.7.5                                               -> 1.7.5
+ * [new tag]             1.7.6                                               -> 1.7.6
+ * [new tag]             1.7.7                                               -> 1.7.7
+ * [new tag]             1.8.0                                               -> 1.8.0
+ * [new tag]             1.8.1                                               -> 1.8.1
+ * [new tag]             1.8.2                                               -> 1.8.2
+ * [new tag]             1.8.3                                               -> 1.8.3
+ * [new tag]             1.8.4                                               -> 1.8.4
+ * [new tag]             1.8.5                                               -> 1.8.5
+ * [new tag]             1.8.6                                               -> 1.8.6
+ * [new tag]             1.9.0                                               -> 1.9.0
+ * [new tag]             1.9.1                                               -> 1.9.1
+ * [new tag]             1.9.2                                               -> 1.9.2
+ * [new tag]             1.9.3                                               -> 1.9.3
+ * [new tag]             2.0.0                                               -> 2.0.0
+ * [new tag]             2.0.1                                               -> 2.0.1
+ * [new tag]             2.0.2                                               -> 2.0.2
+ * [new tag]             2.0.3                                               -> 2.0.3
+ * [new tag]             2.0.4                                               -> 2.0.4
+ * [new tag]             2.0.5                                               -> 2.0.5
+ * [new tag]             2.0.6                                               -> 2.0.6
+ * [new tag]             2.1.0                                               -> 2.1.0
+ * [new tag]             2.1.1                                               -> 2.1.1
+ * [new tag]             2.1.10                                              -> 2.1.10
+ * [new tag]             2.1.11                                              -> 2.1.11
+ * [new tag]             2.1.12                                              -> 2.1.12
+ * [new tag]             2.1.13                                              -> 2.1.13
+ * [new tag]             2.1.14                                              -> 2.1.14
+ * [new tag]             2.1.15                                              -> 2.1.15
+ * [new tag]             2.1.16                                              -> 2.1.16
+ * [new tag]             2.1.2                                               -> 2.1.2
+ * [new tag]             2.1.3                                               -> 2.1.3
+ * [new tag]             2.1.4                                               -> 2.1.4
+ * [new tag]             2.1.5                                               -> 2.1.5
+ * [new tag]             2.1.6                                               -> 2.1.6
+ * [new tag]             2.1.7                                               -> 2.1.7
+ * [new tag]             2.1.8                                               -> 2.1.8
+ * [new tag]             2.1.9                                               -> 2.1.9
+ * [new tag]             2.2.0                                               -> 2.2.0
+ * [new tag]             2.2.1                                               -> 2.2.1
+ * [new tag]             2.2.10                                              -> 2.2.10
+ * [new tag]             2.2.11                                              -> 2.2.11
+ * [new tag]             2.2.12                                              -> 2.2.12
+ * [new tag]             2.2.13                                              -> 2.2.13
+ * [new tag]             2.2.14                                              -> 2.2.14
+ * [new tag]             2.2.15                                              -> 2.2.15
+ * [new tag]             2.2.16                                              -> 2.2.16
+ * [new tag]             2.2.17                                              -> 2.2.17
+ * [new tag]             2.2.2                                               -> 2.2.2
+ * [new tag]             2.2.3                                               -> 2.2.3
+ * [new tag]             2.2.4                                               -> 2.2.4
+ * [new tag]             2.2.5                                               -> 2.2.5
+ * [new tag]             2.2.6                                               -> 2.2.6
+ * [new tag]             2.2.7                                               -> 2.2.7
+ * [new tag]             2.2.8                                               -> 2.2.8
+ * [new tag]             2.2.9                                               -> 2.2.9
+ * [new tag]             2.3.0                                               -> 2.3.0
+ * [new tag]             2.4.0                                               -> 2.4.0
+ * [new tag]             2.4.1                                               -> 2.4.1
+ * [new tag]             2.4.10                                              -> 2.4.10
+ * [new tag]             2.4.11                                              -> 2.4.11
+ * [new tag]             2.4.12                                              -> 2.4.12
+ * [new tag]             2.4.13                                              -> 2.4.13
+ * [new tag]             2.4.14                                              -> 2.4.14
+ * [new tag]             2.4.15                                              -> 2.4.15
+ * [new tag]             2.4.16                                              -> 2.4.16
+ * [new tag]             2.4.2                                               -> 2.4.2
+ * [new tag]             2.4.3                                               -> 2.4.3
+ * [new tag]             2.4.4                                               -> 2.4.4
+ * [new tag]             2.4.5                                               -> 2.4.5
+ * [new tag]             2.4.6                                               -> 2.4.6
+ * [new tag]             2.4.7                                               -> 2.4.7
+ * [new tag]             2.4.8                                               -> 2.4.8
+ * [new tag]             2.4.9                                               -> 2.4.9
+ * [new tag]             2.5.0                                               -> 2.5.0
+ * [new tag]             2.5.1                                               -> 2.5.1
+ * [new tag]             2.5.10                                              -> 2.5.10
+ * [new tag]             2.5.11                                              -> 2.5.11
+ * [new tag]             2.5.12                                              -> 2.5.12
+ * [new tag]             2.5.2                                               -> 2.5.2
+ * [new tag]             2.5.3                                               -> 2.5.3
+ * [new tag]             2.5.4                                               -> 2.5.4
+ * [new tag]             2.5.5                                               -> 2.5.5
+ * [new tag]             2.5.6                                               -> 2.5.6
+ * [new tag]             2.5.7                                               -> 2.5.7
+ * [new tag]             2.5.8                                               -> 2.5.8
+ * [new tag]             2.5.9                                               -> 2.5.9
+ * [new tag]             2.6.0                                               -> 2.6.0
+ * [new tag]             2.6.1                                               -> 2.6.1
+ * [new tag]             2.6.2                                               -> 2.6.2
+ * [new tag]             2.7.0                                               -> 2.7.0
+ * [new tag]             2.7.1                                               -> 2.7.1
+ * [new tag]             2.7.2                                               -> 2.7.2
+ * [new tag]             2.7.3                                               -> 2.7.3
+ * [new tag]             2.7.4                                               -> 2.7.4
+ * [new tag]             2.7.5                                               -> 2.7.5
+ * [new tag]             2.7.6                                               -> 2.7.6
+ * [new tag]             2.7.7                                               -> 2.7.7
+ * [new tag]             3.0.0                                               -> 3.0.0
+ * [new tag]             3.0.1                                               -> 3.0.1
+ * [new tag]             3.0.10                                              -> 3.0.10
+ * [new tag]             3.0.11                                              -> 3.0.11
+ * [new tag]             3.0.2                                               -> 3.0.2
+ * [new tag]             3.0.3                                               -> 3.0.3
+ * [new tag]             3.0.4                                               -> 3.0.4
+ * [new tag]             3.0.5                                               -> 3.0.5
+ * [new tag]             3.0.6                                               -> 3.0.6
+ * [new tag]             3.0.7                                               -> 3.0.7
+ * [new tag]             3.0.8                                               -> 3.0.8
+ * [new tag]             3.0.9                                               -> 3.0.9
+ * [new tag]             3.1.0                                               -> 3.1.0
+ * [new tag]             3.1.1                                               -> 3.1.1
+ * [new tag]             3.1.10                                              -> 3.1.10
+ * [new tag]             3.1.11                                              -> 3.1.11
+ * [new tag]             3.1.12                                              -> 3.1.12
+ * [new tag]             3.1.2                                               -> 3.1.2
+ * [new tag]             3.1.3                                               -> 3.1.3
+ * [new tag]             3.1.4                                               -> 3.1.4
+ * [new tag]             3.1.5                                               -> 3.1.5
+ * [new tag]             3.1.6                                               -> 3.1.6
+ * [new tag]             3.1.7                                               -> 3.1.7
+ * [new tag]             3.1.8                                               -> 3.1.8
+ * [new tag]             3.1.9                                               -> 3.1.9
+ * [new tag]             3.2.0                                               -> 3.2.0
+ * [new tag]             3.2.1                                               -> 3.2.1
+ * [new tag]             3.2.10                                              -> 3.2.10
+ * [new tag]             3.2.11                                              -> 3.2.11
+ * [new tag]             3.2.12                                              -> 3.2.12
+ * [new tag]             3.2.13                                              -> 3.2.13
+ * [new tag]             3.2.14                                              -> 3.2.14
+ * [new tag]             3.2.15                                              -> 3.2.15
+ * [new tag]             3.2.16                                              -> 3.2.16
+ * [new tag]             3.2.17                                              -> 3.2.17
+ * [new tag]             3.2.2                                               -> 3.2.2
+ * [new tag]             3.2.3                                               -> 3.2.3
+ * [new tag]             3.2.4                                               -> 3.2.4
+ * [new tag]             3.2.5                                               -> 3.2.5
+ * [new tag]             3.2.6                                               -> 3.2.6
+ * [new tag]             3.2.7                                               -> 3.2.7
+ * [new tag]             3.2.8                                               -> 3.2.8
+ * [new tag]             3.2.9                                               -> 3.2.9
+ * [new tag]             3.3.0                                               -> 3.3.0
+ * [new tag]             3.3.1                                               -> 3.3.1
+ * [new tag]             3.3.10                                              -> 3.3.10
+ * [new tag]             3.3.11                                              -> 3.3.11
+ * [new tag]             3.3.12                                              -> 3.3.12
+ * [new tag]             3.3.13                                              -> 3.3.13
+ * [new tag]             3.3.14                                              -> 3.3.14
+ * [new tag]             3.3.15                                              -> 3.3.15
+ * [new tag]             3.3.2                                               -> 3.3.2
+ * [new tag]             3.3.3                                               -> 3.3.3
+ * [new tag]             3.3.4                                               -> 3.3.4
+ * [new tag]             3.3.5                                               -> 3.3.5
+ * [new tag]             3.3.6                                               -> 3.3.6
+ * [new tag]             3.3.7                                               -> 3.3.7
+ * [new tag]             3.3.8                                               -> 3.3.8
+ * [new tag]             3.3.9                                               -> 3.3.9
+HEAD is now at 283c0e510 Merge pull request #12891 from Homebrew/dependabot/bundler/Library/Homebrew/sorbet-0.5.9659
+==> Tapping homebrew/core
+remote: Enumerating objects: 1144410, done.
+remote: Total 1144410 (delta 0), reused 0 (delta 0), pack-reused 1144410
+Receiving objects: 100% (1144410/1144410), 451.01 MiB | 5.60 MiB/s, done.
+Resolving deltas: 100% (791371/791371), done.
+
+From https://github.com/Homebrew/homebrew-core
+ * [new branch]              master     -> origin/master
+HEAD is now at f8831561853 orientdb: update 3.2.5 bottle.
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:0cb1cc7af109437fe0e020c9f3b7b95c3c709b140bde9f991ad2c1433496dd42
+############################################################################################################################################################################ 100.0%
+==> Pouring portable-ruby-2.6.8.yosemite.bottle.tar.gz
+Updated 1 tap (homebrew/core).
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+erika@Ezequiels-MacBook-Pro ~ % 
+erika@Ezequiels-MacBook-Pro ~ % brew install git
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.21
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:a025e143fe3f5f7e24a936b8b0a4926acfdd025b11d62024e3d355c106536d56
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a025e143fe3f5f7e24a936b8b0a4926acfdd025b11d62024e3d355c106536d56?se=2022-02-18T19%3A20%3A00Z&s
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.39
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:3b6478346d722d13c9dd556a90949319417224006939b1e46b06a189dc8c5262
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:3b6478346d722d13c9dd556a90949319417224006939b1e46b06a189dc8c5262?se=2022-02-18T19%3A20%3A00Z&s
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.35.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:212244b5acaaa49fdd33b710fc6795c457aa25e89a854d39407bf36532137ef8
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:212244b5acaaa49fdd33b710fc6795c457aa25e89a854d39407bf36532137ef8?se=2022-02-18T19%3A20%3A00Z&s
+######################################################################## 100.0%
+==> Installing dependencies for git: gettext and pcre2
+==> Installing git dependency: gettext
+==> Pouring gettext--0.21.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/gettext/0.21: 1,953 files, 19.8MB
+==> Installing git dependency: pcre2
+==> Pouring pcre2--10.39.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre2/10.39: 230 files, 6.2MB
+==> Installing git
+==> Pouring git--2.35.1.big_sur.bottle.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/git
+Target /usr/local/bin/git
+already exists. You may want to remove it:
+  rm '/usr/local/bin/git'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite git
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run git
+
+Possible conflicting files are:
+/usr/local/bin/git -> /usr/local/git/bin/git
+/usr/local/bin/git-cvsserver -> /usr/local/git/bin/git-cvsserver
+/usr/local/bin/git-shell -> /usr/local/git/bin/git-shell
+/usr/local/bin/git-upload-pack -> /usr/local/git/bin/git-upload-pack
+/usr/local/share/man/man1/git-add.1 -> /usr/local/git/share/man/man1/git-add.1
+/usr/local/share/man/man1/git-am.1 -> /usr/local/git/share/man/man1/git-am.1
+/usr/local/share/man/man1/git-annotate.1 -> /usr/local/git/share/man/man1/git-annotate.1
+/usr/local/share/man/man1/git-apply.1 -> /usr/local/git/share/man/man1/git-apply.1
+/usr/local/share/man/man1/git-archimport.1 -> /usr/local/git/share/man/man1/git-archimport.1
+/usr/local/share/man/man1/git-archive.1 -> /usr/local/git/share/man/man1/git-archive.1
+/usr/local/share/man/man1/git-bisect.1 -> /usr/local/git/share/man/man1/git-bisect.1
+/usr/local/share/man/man1/git-blame.1 -> /usr/local/git/share/man/man1/git-blame.1
+/usr/local/share/man/man1/git-branch.1 -> /usr/local/git/share/man/man1/git-branch.1
+/usr/local/share/man/man1/git-bundle.1 -> /usr/local/git/share/man/man1/git-bundle.1
+/usr/local/share/man/man1/git-cat-file.1 -> /usr/local/git/share/man/man1/git-cat-file.1
+/usr/local/share/man/man1/git-check-attr.1 -> /usr/local/git/share/man/man1/git-check-attr.1
+/usr/local/share/man/man1/git-check-ignore.1 -> /usr/local/git/share/man/man1/git-check-ignore.1
+/usr/local/share/man/man1/git-check-mailmap.1 -> /usr/local/git/share/man/man1/git-check-mailmap.1
+/usr/local/share/man/man1/git-check-ref-format.1 -> /usr/local/git/share/man/man1/git-check-ref-format.1
+/usr/local/share/man/man1/git-checkout-index.1 -> /usr/local/git/share/man/man1/git-checkout-index.1
+/usr/local/share/man/man1/git-checkout.1 -> /usr/local/git/share/man/man1/git-checkout.1
+/usr/local/share/man/man1/git-cherry-pick.1 -> /usr/local/git/share/man/man1/git-cherry-pick.1
+/usr/local/share/man/man1/git-cherry.1 -> /usr/local/git/share/man/man1/git-cherry.1
+/usr/local/share/man/man1/git-citool.1 -> /usr/local/git/share/man/man1/git-citool.1
+/usr/local/share/man/man1/git-clean.1 -> /usr/local/git/share/man/man1/git-clean.1
+/usr/local/share/man/man1/git-clone.1 -> /usr/local/git/share/man/man1/git-clone.1
+/usr/local/share/man/man1/git-column.1 -> /usr/local/git/share/man/man1/git-column.1
+/usr/local/share/man/man1/git-commit-tree.1 -> /usr/local/git/share/man/man1/git-commit-tree.1
+/usr/local/share/man/man1/git-commit.1 -> /usr/local/git/share/man/man1/git-commit.1
+/usr/local/share/man/man1/git-config.1 -> /usr/local/git/share/man/man1/git-config.1
+/usr/local/share/man/man1/git-count-objects.1 -> /usr/local/git/share/man/man1/git-count-objects.1
+/usr/local/share/man/man1/git-credential-cache--daemon.1 -> /usr/local/git/share/man/man1/git-credential-cache--daemon.1
+/usr/local/share/man/man1/git-credential-cache.1 -> /usr/local/git/share/man/man1/git-credential-cache.1
+/usr/local/share/man/man1/git-credential-store.1 -> /usr/local/git/share/man/man1/git-credential-store.1
+/usr/local/share/man/man1/git-credential.1 -> /usr/local/git/share/man/man1/git-credential.1
+/usr/local/share/man/man1/git-cvsexportcommit.1 -> /usr/local/git/share/man/man1/git-cvsexportcommit.1
+/usr/local/share/man/man1/git-cvsimport.1 -> /usr/local/git/share/man/man1/git-cvsimport.1
+/usr/local/share/man/man1/git-cvsserver.1 -> /usr/local/git/share/man/man1/git-cvsserver.1
+/usr/local/share/man/man1/git-daemon.1 -> /usr/local/git/share/man/man1/git-daemon.1
+/usr/local/share/man/man1/git-describe.1 -> /usr/local/git/share/man/man1/git-describe.1
+/usr/local/share/man/man1/git-diff-files.1 -> /usr/local/git/share/man/man1/git-diff-files.1
+/usr/local/share/man/man1/git-diff-index.1 -> /usr/local/git/share/man/man1/git-diff-index.1
+/usr/local/share/man/man1/git-diff-tree.1 -> /usr/local/git/share/man/man1/git-diff-tree.1
+/usr/local/share/man/man1/git-diff.1 -> /usr/local/git/share/man/man1/git-diff.1
+/usr/local/share/man/man1/git-difftool.1 -> /usr/local/git/share/man/man1/git-difftool.1
+/usr/local/share/man/man1/git-fast-export.1 -> /usr/local/git/share/man/man1/git-fast-export.1
+/usr/local/share/man/man1/git-fast-import.1 -> /usr/local/git/share/man/man1/git-fast-import.1
+/usr/local/share/man/man1/git-fetch-pack.1 -> /usr/local/git/share/man/man1/git-fetch-pack.1
+/usr/local/share/man/man1/git-fetch.1 -> /usr/local/git/share/man/man1/git-fetch.1
+/usr/local/share/man/man1/git-filter-branch.1 -> /usr/local/git/share/man/man1/git-filter-branch.1
+/usr/local/share/man/man1/git-fmt-merge-msg.1 -> /usr/local/git/share/man/man1/git-fmt-merge-msg.1
+/usr/local/share/man/man1/git-for-each-ref.1 -> /usr/local/git/share/man/man1/git-for-each-ref.1
+/usr/local/share/man/man1/git-format-patch.1 -> /usr/local/git/share/man/man1/git-format-patch.1
+/usr/local/share/man/man1/git-fsck-objects.1 -> /usr/local/git/share/man/man1/git-fsck-objects.1
+/usr/local/share/man/man1/git-fsck.1 -> /usr/local/git/share/man/man1/git-fsck.1
+/usr/local/share/man/man1/git-gc.1 -> /usr/local/git/share/man/man1/git-gc.1
+/usr/local/share/man/man1/git-get-tar-commit-id.1 -> /usr/local/git/share/man/man1/git-get-tar-commit-id.1
+/usr/local/share/man/man1/git-grep.1 -> /usr/local/git/share/man/man1/git-grep.1
+/usr/local/share/man/man1/git-gui.1 -> /usr/local/git/share/man/man1/git-gui.1
+/usr/local/share/man/man1/git-hash-object.1 -> /usr/local/git/share/man/man1/git-hash-object.1
+/usr/local/share/man/man1/git-help.1 -> /usr/local/git/share/man/man1/git-help.1
+/usr/local/share/man/man1/git-http-backend.1 -> /usr/local/git/share/man/man1/git-http-backend.1
+/usr/local/share/man/man1/git-http-fetch.1 -> /usr/local/git/share/man/man1/git-http-fetch.1
+/usr/local/share/man/man1/git-http-push.1 -> /usr/local/git/share/man/man1/git-http-push.1
+/usr/local/share/man/man1/git-imap-send.1 -> /usr/local/git/share/man/man1/git-imap-send.1
+/usr/local/share/man/man1/git-index-pack.1 -> /usr/local/git/share/man/man1/git-index-pack.1
+/usr/local/share/man/man1/git-init-db.1 -> /usr/local/git/share/man/man1/git-init-db.1
+/usr/local/share/man/man1/git-init.1 -> /usr/local/git/share/man/man1/git-init.1
+/usr/local/share/man/man1/git-instaweb.1 -> /usr/local/git/share/man/man1/git-instaweb.1
+/usr/local/share/man/man1/git-interpret-trailers.1 -> /usr/local/git/share/man/man1/git-interpret-trailers.1
+/usr/local/share/man/man1/git-log.1 -> /usr/local/git/share/man/man1/git-log.1
+/usr/local/share/man/man1/git-ls-files.1 -> /usr/local/git/share/man/man1/git-ls-files.1
+/usr/local/share/man/man1/git-ls-remote.1 -> /usr/local/git/share/man/man1/git-ls-remote.1
+/usr/local/share/man/man1/git-ls-tree.1 -> /usr/local/git/share/man/man1/git-ls-tree.1
+/usr/local/share/man/man1/git-mailinfo.1 -> /usr/local/git/share/man/man1/git-mailinfo.1
+/usr/local/share/man/man1/git-mailsplit.1 -> /usr/local/git/share/man/man1/git-mailsplit.1
+/usr/local/share/man/man1/git-merge-base.1 -> /usr/local/git/share/man/man1/git-merge-base.1
+/usr/local/share/man/man1/git-merge-file.1 -> /usr/local/git/share/man/man1/git-merge-file.1
+/usr/local/share/man/man1/git-merge-index.1 -> /usr/local/git/share/man/man1/git-merge-index.1
+/usr/local/share/man/man1/git-merge-one-file.1 -> /usr/local/git/share/man/man1/git-merge-one-file.1
+/usr/local/share/man/man1/git-merge-tree.1 -> /usr/local/git/share/man/man1/git-merge-tree.1
+/usr/local/share/man/man1/git-merge.1 -> /usr/local/git/share/man/man1/git-merge.1
+/usr/local/share/man/man1/git-mergetool--lib.1 -> /usr/local/git/share/man/man1/git-mergetool--lib.1
+/usr/local/share/man/man1/git-mergetool.1 -> /usr/local/git/share/man/man1/git-mergetool.1
+/usr/local/share/man/man1/git-mktag.1 -> /usr/local/git/share/man/man1/git-mktag.1
+/usr/local/share/man/man1/git-mktree.1 -> /usr/local/git/share/man/man1/git-mktree.1
+/usr/local/share/man/man1/git-mv.1 -> /usr/local/git/share/man/man1/git-mv.1
+/usr/local/share/man/man1/git-name-rev.1 -> /usr/local/git/share/man/man1/git-name-rev.1
+/usr/local/share/man/man1/git-notes.1 -> /usr/local/git/share/man/man1/git-notes.1
+/usr/local/share/man/man1/git-p4.1 -> /usr/local/git/share/man/man1/git-p4.1
+/usr/local/share/man/man1/git-pack-objects.1 -> /usr/local/git/share/man/man1/git-pack-objects.1
+/usr/local/share/man/man1/git-pack-redundant.1 -> /usr/local/git/share/man/man1/git-pack-redundant.1
+/usr/local/share/man/man1/git-pack-refs.1 -> /usr/local/git/share/man/man1/git-pack-refs.1
+/usr/local/share/man/man1/git-patch-id.1 -> /usr/local/git/share/man/man1/git-patch-id.1
+/usr/local/share/man/man1/git-prune-packed.1 -> /usr/local/git/share/man/man1/git-prune-packed.1
+/usr/local/share/man/man1/git-prune.1 -> /usr/local/git/share/man/man1/git-prune.1
+/usr/local/share/man/man1/git-pull.1 -> /usr/local/git/share/man/man1/git-pull.1
+/usr/local/share/man/man1/git-push.1 -> /usr/local/git/share/man/man1/git-push.1
+/usr/local/share/man/man1/git-quiltimport.1 -> /usr/local/git/share/man/man1/git-quiltimport.1
+/usr/local/share/man/man1/git-read-tree.1 -> /usr/local/git/share/man/man1/git-read-tree.1
+/usr/local/share/man/man1/git-rebase.1 -> /usr/local/git/share/man/man1/git-rebase.1
+/usr/local/share/man/man1/git-receive-pack.1 -> /usr/local/git/share/man/man1/git-receive-pack.1
+/usr/local/share/man/man1/git-reflog.1 -> /usr/local/git/share/man/man1/git-reflog.1
+/usr/local/share/man/man1/git-remote-ext.1 -> /usr/local/git/share/man/man1/git-remote-ext.1
+/usr/local/share/man/man1/git-remote-fd.1 -> /usr/local/git/share/man/man1/git-remote-fd.1
+/usr/local/share/man/man1/git-remote.1 -> /usr/local/git/share/man/man1/git-remote.1
+/usr/local/share/man/man1/git-repack.1 -> /usr/local/git/share/man/man1/git-repack.1
+/usr/local/share/man/man1/git-replace.1 -> /usr/local/git/share/man/man1/git-replace.1
+/usr/local/share/man/man1/git-request-pull.1 -> /usr/local/git/share/man/man1/git-request-pull.1
+/usr/local/share/man/man1/git-rerere.1 -> /usr/local/git/share/man/man1/git-rerere.1
+/usr/local/share/man/man1/git-reset.1 -> /usr/local/git/share/man/man1/git-reset.1
+/usr/local/share/man/man1/git-rev-list.1 -> /usr/local/git/share/man/man1/git-rev-list.1
+/usr/local/share/man/man1/git-rev-parse.1 -> /usr/local/git/share/man/man1/git-rev-parse.1
+/usr/local/share/man/man1/git-revert.1 -> /usr/local/git/share/man/man1/git-revert.1
+/usr/local/share/man/man1/git-rm.1 -> /usr/local/git/share/man/man1/git-rm.1
+/usr/local/share/man/man1/git-send-email.1 -> /usr/local/git/share/man/man1/git-send-email.1
+/usr/local/share/man/man1/git-send-pack.1 -> /usr/local/git/share/man/man1/git-send-pack.1
+/usr/local/share/man/man1/git-sh-i18n--envsubst.1 -> /usr/local/git/share/man/man1/git-sh-i18n--envsubst.1
+/usr/local/share/man/man1/git-sh-i18n.1 -> /usr/local/git/share/man/man1/git-sh-i18n.1
+/usr/local/share/man/man1/git-sh-setup.1 -> /usr/local/git/share/man/man1/git-sh-setup.1
+/usr/local/share/man/man1/git-shell.1 -> /usr/local/git/share/man/man1/git-shell.1
+/usr/local/share/man/man1/git-shortlog.1 -> /usr/local/git/share/man/man1/git-shortlog.1
+/usr/local/share/man/man1/git-show-branch.1 -> /usr/local/git/share/man/man1/git-show-branch.1
+/usr/local/share/man/man1/git-show-index.1 -> /usr/local/git/share/man/man1/git-show-index.1
+/usr/local/share/man/man1/git-show-ref.1 -> /usr/local/git/share/man/man1/git-show-ref.1
+/usr/local/share/man/man1/git-show.1 -> /usr/local/git/share/man/man1/git-show.1
+/usr/local/share/man/man1/git-stage.1 -> /usr/local/git/share/man/man1/git-stage.1
+/usr/local/share/man/man1/git-stash.1 -> /usr/local/git/share/man/man1/git-stash.1
+/usr/local/share/man/man1/git-status.1 -> /usr/local/git/share/man/man1/git-status.1
+/usr/local/share/man/man1/git-stripspace.1 -> /usr/local/git/share/man/man1/git-stripspace.1
+/usr/local/share/man/man1/git-submodule.1 -> /usr/local/git/share/man/man1/git-submodule.1
+/usr/local/share/man/man1/git-svn.1 -> /usr/local/git/share/man/man1/git-svn.1
+/usr/local/share/man/man1/git-symbolic-ref.1 -> /usr/local/git/share/man/man1/git-symbolic-ref.1
+/usr/local/share/man/man1/git-tag.1 -> /usr/local/git/share/man/man1/git-tag.1
+/usr/local/share/man/man1/git-unpack-file.1 -> /usr/local/git/share/man/man1/git-unpack-file.1
+/usr/local/share/man/man1/git-unpack-objects.1 -> /usr/local/git/share/man/man1/git-unpack-objects.1
+/usr/local/share/man/man1/git-update-index.1 -> /usr/local/git/share/man/man1/git-update-index.1
+/usr/local/share/man/man1/git-update-ref.1 -> /usr/local/git/share/man/man1/git-update-ref.1
+/usr/local/share/man/man1/git-update-server-info.1 -> /usr/local/git/share/man/man1/git-update-server-info.1
+/usr/local/share/man/man1/git-upload-archive.1 -> /usr/local/git/share/man/man1/git-upload-archive.1
+/usr/local/share/man/man1/git-upload-pack.1 -> /usr/local/git/share/man/man1/git-upload-pack.1
+/usr/local/share/man/man1/git-var.1 -> /usr/local/git/share/man/man1/git-var.1
+/usr/local/share/man/man1/git-verify-commit.1 -> /usr/local/git/share/man/man1/git-verify-commit.1
+/usr/local/share/man/man1/git-verify-pack.1 -> /usr/local/git/share/man/man1/git-verify-pack.1
+/usr/local/share/man/man1/git-verify-tag.1 -> /usr/local/git/share/man/man1/git-verify-tag.1
+/usr/local/share/man/man1/git-web--browse.1 -> /usr/local/git/share/man/man1/git-web--browse.1
+/usr/local/share/man/man1/git-whatchanged.1 -> /usr/local/git/share/man/man1/git-whatchanged.1
+/usr/local/share/man/man1/git-worktree.1 -> /usr/local/git/share/man/man1/git-worktree.1
+/usr/local/share/man/man1/git-write-tree.1 -> /usr/local/git/share/man/man1/git-write-tree.1
+/usr/local/share/man/man1/git.1 -> /usr/local/git/share/man/man1/git.1
+/usr/local/share/man/man1/gitk.1 -> /usr/local/git/share/man/man1/gitk.1
+/usr/local/share/man/man1/gitweb.1 -> /usr/local/git/share/man/man1/gitweb.1
+/usr/local/share/man/man5/gitattributes.5 -> /usr/local/git/share/man/man5/gitattributes.5
+/usr/local/share/man/man5/githooks.5 -> /usr/local/git/share/man/man5/githooks.5
+/usr/local/share/man/man5/gitignore.5 -> /usr/local/git/share/man/man5/gitignore.5
+/usr/local/share/man/man5/gitmodules.5 -> /usr/local/git/share/man/man5/gitmodules.5
+/usr/local/share/man/man5/gitrepository-layout.5 -> /usr/local/git/share/man/man5/gitrepository-layout.5
+/usr/local/share/man/man5/gitweb.conf.5 -> /usr/local/git/share/man/man5/gitweb.conf.5
+/usr/local/share/man/man7/gitcli.7 -> /usr/local/git/share/man/man7/gitcli.7
+/usr/local/share/man/man7/gitcore-tutorial.7 -> /usr/local/git/share/man/man7/gitcore-tutorial.7
+/usr/local/share/man/man7/gitcredentials.7 -> /usr/local/git/share/man/man7/gitcredentials.7
+/usr/local/share/man/man7/gitcvs-migration.7 -> /usr/local/git/share/man/man7/gitcvs-migration.7
+/usr/local/share/man/man7/gitdiffcore.7 -> /usr/local/git/share/man/man7/gitdiffcore.7
+/usr/local/share/man/man7/giteveryday.7 -> /usr/local/git/share/man/man7/giteveryday.7
+/usr/local/share/man/man7/gitglossary.7 -> /usr/local/git/share/man/man7/gitglossary.7
+/usr/local/share/man/man7/gitnamespaces.7 -> /usr/local/git/share/man/man7/gitnamespaces.7
+/usr/local/share/man/man7/gitrevisions.7 -> /usr/local/git/share/man/man7/gitrevisions.7
+/usr/local/share/man/man7/gitsubmodules.7 -> /usr/local/git/share/man/man7/gitsubmodules.7
+/usr/local/share/man/man7/gittutorial-2.7 -> /usr/local/git/share/man/man7/gittutorial-2.7
+/usr/local/share/man/man7/gittutorial.7 -> /usr/local/git/share/man/man7/gittutorial.7
+/usr/local/share/man/man7/gitworkflows.7 -> /usr/local/git/share/man/man7/gitworkflows.7
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+==> Summary
+🍺  /usr/local/Cellar/git/2.35.1: 1,523 files, 43MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> Caveats
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+erika@Ezequiels-MacBook-Pro ~ % brew install git
+Warning: git 2.35.1 is already installed, it's just not linked.
+To link this version, run:
+  brew link git
+erika@Ezequiels-MacBook-Pro ~ % brew link git
+Linking /usr/local/Cellar/git/2.35.1... 
+Error: Could not symlink bin/git
+Target /usr/local/bin/git
+already exists. You may want to remove it:
+  rm '/usr/local/bin/git'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite git
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run git
+erika@Ezequiels-MacBook-Pro ~ % git config --global user.name "Erika de Oliveira Lima"
+git config --global user.email erikadeo.lima@hotmail.com
+erika@Ezequiels-MacBook-Pro ~ % git config --global core.editor "code --wait"
+erika@Ezequiels-MacBook-Pro ~ % git --version
+git version 2.15.0
+erika@Ezequiels-MacBook-Pro ~ % git config --list
+core.excludesfile=~/.gitignore
+core.legacyheaders=false
+core.quotepath=false
+mergetool.keepbackup=true
+push.default=simple
+color.ui=auto
+color.interactive=auto
+repack.usedeltabaseoffset=true
+alias.s=status
+alias.a=!git add . && git status
+alias.au=!git add -u . && git status
+alias.aa=!git add . && git add -u . && git status
+alias.c=commit
+alias.cm=commit -m
+alias.ca=commit --amend
+alias.ac=!git add . && git commit
+alias.acm=!git add . && git commit -m
+alias.l=log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+alias.ll=log --stat --abbrev-commit
+alias.lg=log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+alias.llg=log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+alias.d=diff
+alias.master=checkout master
+alias.spull=svn rebase
+alias.spush=svn dcommit
+alias.alias=!git config --list | grep 'alias\.' | sed 's/alias\.\([^=]*\)=\(.*\)/\1\	 => \2/' | sort
+include.path=~/.gitcinclude
+include.path=.githubconfig
+include.path=.gitcredential
+diff.exif.textconv=exif
+credential.helper=osxkeychain
+user.name=Erika de Oliveira Lima
+user.email=erikadeo.lima@hotmail.com
+core.editor=code --wait
+erika@Ezequiels-MacBook-Pro ~ % history
+  140  less cat arquivo.txt | grep -i 'zambia'
+  141  less cat countries.txt | grep -i 'zambia'
+  142  less countries.txt
+  143  less / Zambia countries.txt
+  144  brew install git
+  145  brew install git
+  146  sudo brew install git
+  147  install git
+  148  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  149  brew install git
+  150  brew install git
+  151  brew link git
+  152  git config --global user.name "Erika de Oliveira Lima"\ngit config --global user.email erikadeo.lima@hotmail.com
+  153  git config --global core.editor "code --wait"
+  154  git --version
+  155  git config --list
+erika@Ezequiels-MacBook-Pro ~ % ssh-keygen -t rsa -b 4096 -C "erikadeo.lima@hotmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/erika/.ssh/id_rsa): 
+Created directory '/Users/erika/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/erika/.ssh/id_rsa.
+Your public key has been saved in /Users/erika/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:IpXxivzMTBqw2ekt5WoejkZVvS8O4IvY2oBeKxhmI0s erikadeo.lima@hotmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|      ..         |
+|      .+.        |
+|  .  .o ..       |
+|   *o+ ..        |
+|  ooB.= S.       |
+|+E...&... .      |
+|O*.o=.Bo .       |
+|=+=o++  .        |
+|.++++            |
++----[SHA256]-----+
+erika@Ezequiels-MacBook-Pro ~ % eval "$(ssh-agent -s)"
+Agent pid 5097
+erika@Ezequiels-MacBook-Pro ~ % ssh-add ~/.ssh/id_rsa
+Enter passphrase for /Users/erika/.ssh/id_rsa: 
+Identity added: /Users/erika/.ssh/id_rsa (erikadeo.lima@hotmail.com)
+erika@Ezequiels-MacBook-Pro ~ % history
+  144  brew install git
+  145  brew install git
+  146  sudo brew install git
+  147  install git
+  148  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  149  brew install git
+  150  brew install git
+  151  brew link git
+  152  git config --global user.name "Erika de Oliveira Lima"\ngit config --global user.email erikadeo.lima@hotmail.com
+  153  git config --global core.editor "code --wait"
+  154  git --version
+  155  git config --list
+  156  history
+  157  ssh-keygen -t rsa -b 4096 -C "erikadeo.lima@hotmail.com"
+  158  eval "$(ssh-agent -s)"
+  159  ssh-add ~/.ssh/id_rsa
+erika@Ezequiels-MacBook-Pro ~ % 

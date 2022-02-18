@@ -1,0 +1,23 @@
+Last login: Fri Feb 18 13:26:22 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % xclip -sel clip < ~/.ssh/id_rsa.pub
+zsh: command not found: xclip
+erika@Ezequiels-MacBook-Pro ~ % cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYUMB0Ql4zmeSZwfjdLQs9PYpwC2Nohe8CRWxg42CFCh39C3xQPjp8SmEDn6yumBGQwTroXMq6TG12SmObSy4ROk5gflxHl5oHIZvPlnLnHZR7fc7lbRdpqpDlUu7HksY/HDE+iGOu1awfqwX5CTVlOvk3cU7f5cu39MqMadYtGHOlPPuHXoHCAOt/nUoe2LJlMhV4WD1kdtH8CyMxYBTQk/Pg3BDj4DZcQRevVC3o7HJzAzHDu4+AQl9dDn4RSGJyqVEbCFGLjFEDpnAG8j1QeDCdaViT3QMSy4W1Z7+K8dk/BcmjtjAtQx6zR2gyz4GB2vaUEWgpLar8hdCb9DpkXZMDKnU470LA7YquoOXsx+KsRhGDiaCkW6hBoraJgMbUKbNDO5R0UXFsj+IrzwHpFT8rxH43jhK05JA0vBvctYyTvKZi+S6RfWFmiq9mMz2HrsBppgX54OBZV71hAEHOm1oPLOSu5kTtEwOXEmQlNNvlZo1eCATHa1jsSBO/rghDWT1r0bGt3IGy4hpYLwDt9947oy4xVa/fLjBZTY6IdFyvgVaeg6Og1LnqVkxPLX5cDXfg6beevhTDmAv3Izf6ZZcZq8GEGBYnGCo/sGEEXaQwu36YvjAmJtUkTNQ7WkdGZl5i0/VhUFHELyhcGktaG0jVuMw4tPj2qgiAOUu+ow== erikadeo.lima@hotmail.com
+erika@Ezequiels-MacBook-Pro ~ % history
+  147  install git
+  148  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  149  brew install git
+  150  brew install git
+  151  brew link git
+  152  git config --global user.name "Erika de Oliveira Lima"\ngit config --global user.email erikadeo.lima@hotmail.com
+  153  git config --global core.editor "code --wait"
+  154  git --version
+  155  git config --list
+  156  history
+  157  ssh-keygen -t rsa -b 4096 -C "erikadeo.lima@hotmail.com"
+  158  eval "$(ssh-agent -s)"
+  159  ssh-add ~/.ssh/id_rsa
+  160  history
+  161  xclip -sel clip < ~/.ssh/id_rsa.pub
+  162  cat ~/.ssh/id_rsa.pub
+erika@Ezequiels-MacBook-Pro ~ % 

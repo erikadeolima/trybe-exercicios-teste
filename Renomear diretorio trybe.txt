@@ -1,0 +1,34 @@
+Last login: Fri Feb 18 08:17:31 on console
+erika@Ezequiels-MacBook-Pro ~ % cd documents/      
+erika@Ezequiels-MacBook-Pro documents % ls
+Install.pkg				Trybe_WebFullStack
+Prints					Zoom
+Tabela Fipe - corsa wind csp6566.pdf
+erika@Ezequiels-MacBook-Pro documents % cp trybe_webfullstack > trybe       
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvXc] source_file ... target_directory
+erika@Ezequiels-MacBook-Pro documents % mv trybe_webfullstack trybe  
+erika@Ezequiels-MacBook-Pro documents % ls
+Install.pkg				Zoom
+Prints					trybe
+Tabela Fipe - corsa wind csp6566.pdf
+erika@Ezequiels-MacBook-Pro documents % histoty
+zsh: command not found: histoty
+erika@Ezequiels-MacBook-Pro documents % history
+  120  cat >> skills2.txt
+  121  sort> skills2.txt
+  122  sort > skills2.txt
+  123  cd documents/trybe*/unix*
+  124  cd documents/trybe_webfullstack/unix_tests
+  125   cat > skills2.txt
+  126  cat >> skills2.txt
+  127  sort > skills2.txt
+  128  sort skills2.txt
+  129  less skills2.txt
+  130  cd documents/
+  131  ls
+  132  cp trybe_webfullstack > trybe
+  133  mv trybe_webfullstack trybe
+  134  ls
+  135  histoty
+erika@Ezequiels-MacBook-Pro documents % 

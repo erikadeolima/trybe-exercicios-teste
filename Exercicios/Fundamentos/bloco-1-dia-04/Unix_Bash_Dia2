@@ -1,0 +1,42 @@
+Last login: Thu Feb 17 16:04:43 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % cd documents/trybe_webfullstack/
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % cat nomes.txt
+cat: nomes.txt: No such file or directory
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % touch nomes.txt
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % cat > nomes.txt
+Ana
+Maria
+Joao
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % cat > nomes.txt
+Amanda
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % cat nomes.txt
+Amanda
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % cat >> nomes.txt
+Fernanda
+Fabiano
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % 
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % cat nomes.txt
+Amanda
+Fernanda
+Fabiano
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % grep F nomes.txt | sort
+Fabiano
+Fernanda
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % history
+   96  grep -i 'brazil' countries.txt
+   97  grep 'Brazil'
+   98  cd documents/trybe_webfullstack/unix_tests
+   99  \ncurl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+  100  cat countries.txt
+  101  less countries.txt
+  102  ana
+  103  cd documents/trybe_webfullstack/
+  104  cat nomes.txt
+  105  touch nomes.txt
+  106  cat > nomes.txt
+  107  cat > nomes.txt
+  108  cat nomes.txt
+  109  cat >> nomes.txt
+  110  cat nomes.txt
+  111  grep F nomes.txt | sort
+erika@Ezequiels-MacBook-Pro trybe_webfullstack % 

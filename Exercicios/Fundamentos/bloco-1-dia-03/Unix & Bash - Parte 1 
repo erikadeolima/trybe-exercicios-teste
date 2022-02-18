@@ -1,0 +1,123 @@
+Last login: Wed Feb 16 18:24:48 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+erika@Ezequiels-MacBook-Pro ~ % cd documents
+erika@Ezequiels-MacBook-Pro documents % ls
+Install.pkg				Trybe_WebFullStack
+Tabela Fipe - corsa wind csp6566.pdf	Zoom
+erika@Ezequiels-MacBook-Pro documents % cd Trybe_WebFullStack 
+erika@Ezequiels-MacBook-Pro Trybe_WebFullStack % mkdir unix_tests
+erika@Ezequiels-MacBook-Pro Trybe_WebFullStack % ls
+unix_tests
+erika@Ezequiels-MacBook-Pro Trybe_WebFullStack % cd unix_tests 
+erika@Ezequiels-MacBook-Pro unix_tests % touch trybe.txt
+erika@Ezequiels-MacBook-Pro unix_tests % touch trybe.txt trybe_bacup.txt
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+trybe.txt	trybe_bacup.txt
+erika@Ezequiels-MacBook-Pro unix_tests % touch trybe.txt trybe_2.txt
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+trybe.txt	trybe_2.txt	trybe_bacup.txt
+erika@Ezequiels-MacBook-Pro unix_tests % rm trybe_2.txt
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+trybe.txt	trybe_bacup.txt
+erika@Ezequiels-MacBook-Pro unix_tests % rm trybe_bacup.txt 
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+trybe.txt
+erika@Ezequiels-MacBook-Pro unix_tests % cp trybe.txt trybe_backup.txt
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+trybe.txt		trybe_backup.txt
+erika@Ezequiels-MacBook-Pro unix_tests % mv trybe.txt trybe_erikalima.txt
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+trybe_backup.txt	trybe_erikalima.txt
+erika@Ezequiels-MacBook-Pro unix_tests % mkdir backup 
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+backup			trybe_backup.txt	trybe_erikalima.txt
+erika@Ezequiels-MacBook-Pro unix_tests % mv trybe_backup.txt /backup
+mv: /backup: Read-only file system
+erika@Ezequiels-MacBook-Pro unix_tests % mv trybe_backup.txt backup
+erika@Ezequiels-MacBook-Pro unix_tests % cd backup
+erika@Ezequiels-MacBook-Pro backup % ls
+trybe_backup.txt
+erika@Ezequiels-MacBook-Pro backup % cd ..
+erika@Ezequiels-MacBook-Pro unix_tests % mkdir backup2
+erika@Ezequiels-MacBook-Pro unix_tests % mv backup/trybe_backup.txt backup2
+erika@Ezequiels-MacBook-Pro unix_tests % backup2
+zsh: command not found: backup2
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+backup			backup2			trybe_erikalima.txt
+erika@Ezequiels-MacBook-Pro unix_tests % lsbackup2
+zsh: command not found: lsbackup2
+erika@Ezequiels-MacBook-Pro unix_tests % ls backup2
+trybe_backup.txt
+erika@Ezequiels-MacBook-Pro unix_tests % rmdir backup
+erika@Ezequiels-MacBook-Pro unix_tests % ls     
+backup2			trybe_erikalima.txt
+erika@Ezequiels-MacBook-Pro unix_tests % mv backup2 backup
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+backup			trybe_erikalima.txt
+erika@Ezequiels-MacBook-Pro unix_tests % clear
+
+erika@Ezequiels-MacBook-Pro unix_tests % touch skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % touch > skills.txt
+usage:
+touch [-A [-][[hh]mm]SS] [-acfhm] [-r file] [-t [[CC]YY]MMDDhhmm[.SS]] file ...
+erika@Ezequiels-MacBook-Pro unix_tests % cat > skills.txt  
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+q
+^K
+^X
+^O
+erika@Ezequiels-MacBook-Pro unix_tests % head -5 skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+erika@Ezequiels-MacBook-Pro unix_tests % tail -4 skills.txt
+q
+^K
+
+
+erika@Ezequiels-MacBook-Pro unix_tests % rm skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+backup			trybe_erikalima.txt
+erika@Ezequiels-MacBook-Pro unix_tests % cat > skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL^D
+erika@Ezequiels-MacBook-Pro unix_tests % rm '.txt'
+rm: .txt: No such file or directory
+erika@Ezequiels-MacBook-Pro unix_tests % rm *.txt
+erika@Ezequiels-MacBook-Pro unix_tests % ls
+backup
+erika@Ezequiels-MacBook-Pro unix_tests % history
+   58  rmdir backup
+   59  ls
+   60  mv backup2 backup
+   61  ls
+   62  clear
+   63  touch skills.txt
+   64  touch > skills.txt
+   65  cat > skills.txt
+   66  head -5 skills.txt
+   67  tail -4 skills.txt
+   68  rm skills.txt
+   69  ls
+   70  cat > skills.txt
+   71  rm '.txt'
+   72  rm *.txt
+   73  ls
+erika@Ezequiels-MacBook-Pro unix_tests % 
