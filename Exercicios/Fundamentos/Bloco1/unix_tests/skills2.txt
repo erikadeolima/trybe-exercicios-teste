@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+yhton
+VsCode
+Node.js
+Java Script
+SQL

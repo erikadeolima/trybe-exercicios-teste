@@ -1,0 +1,15 @@
+Last login: Mon Feb 21 14:53:10 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % cd documents/    
+erika@Ezequiels-MacBook-Pro documents % mkdir trybe-exercices
+erika@Ezequiels-MacBook-Pro documents % cd trybe-exercices
+erika@Ezequiels-MacBook-Pro trybe-exercices % git clone https://github.com/#:~:text=erikadeolima/trybe%2Dexercicios
+Cloning into 'trybe%2Dexercicios'...
+fatal: unable to access 'https://github.com/#:~:text=erikadeolima/trybe%2Dexercicios/': Could not resolve host: github.com
+erika@Ezequiels-MacBook-Pro trybe-exercices % git clone https://github.com/erikadeolima/trybe-exercicios
+Cloning into 'trybe-exercicios'...
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 25 (delta 4), reused 21 (delta 2), pack-reused 0
+Unpacking objects: 100% (25/25), done.
+erika@Ezequiels-MacBook-Pro trybe-exercices % 

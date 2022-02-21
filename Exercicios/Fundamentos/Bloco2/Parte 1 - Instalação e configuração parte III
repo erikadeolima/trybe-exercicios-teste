@@ -1,0 +1,159 @@
+Last login: Fri Feb 18 17:03:52 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % cd documents/trybe/exercicios
+erika@Ezequiels-MacBook-Pro exercicios % cat trybe-skills.txt
+cat: trybe-skills.txt: No such file or directory
+erika@Ezequiels-MacBook-Pro exercicios % cat > trybe-skills.txt
+O que eu vou aprender na Trybe:
+
+- Unix
+- Bash
+- Git
+^C
+erika@Ezequiels-MacBook-Pro exercicios % ls -l
+total 8
+drwxr-xr-x  7 erika  staff  224 18 Fev 16:20 Fundamentos
+-rw-r--r--  1 erika  staff   53 18 Fev 17:10 trybe-skills.txt
+erika@Ezequiels-MacBook-Pro exercicios % cd ..
+erika@Ezequiels-MacBook-Pro trybe % git init 
+Initialized empty Git repository in /Users/erika/Documents/trybe/.git/
+erika@Ezequiels-MacBook-Pro trybe % touch README.md
+erika@Ezequiels-MacBook-Pro trybe % git add .
+git commit -m "Initial commit"
+[master (root-commit) 8f32890] Initial commit
+ 12 files changed, 1930 insertions(+)
+ create mode 100644 5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco 2/Parte 1 - Chave SSH git to github
+ create mode 100644 Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração
+ create mode 100644 Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração parte II
+ create mode 100644 Exercicios/Fundamentos/bloco-1-dia-03/Unix & Bash - Parte 1 
+ create mode 100644 Exercicios/Fundamentos/bloco-1-dia-04/Unix_Bash_Dia2
+ create mode 100644 Exercicios/trybe-skills.txt
+ create mode 100644 README.md
+ create mode 100644 Renomear diretorio trybe.txt
+ create mode 100644 unix_tests/backup/trybe_backup.txt
+ create mode 100644 unix_tests/countries.txt
+ create mode 100644 unix_tests/skills2.txt
+erika@Ezequiels-MacBook-Pro trybe % git remote add origin "git@github.com:erikadeolima/trybe-exercicios.git"
+erika@Ezequiels-MacBook-Pro trybe % git remote -v
+origin	git@github.com:erikadeolima/trybe-exercicios.git (fetch)
+origin	git@github.com:erikadeolima/trybe-exercicios.git (push)
+erika@Ezequiels-MacBook-Pro trybe % git push origin master
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,20.201.28.151' (ECDSA) to the list of known hosts.
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (19/19), 13.06 KiB | 2.61 MiB/s, done.
+Total 19 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:erikadeolima/trybe-exercicios.git
+ * [new branch]      master -> master
+erika@Ezequiels-MacBook-Pro trybe % cd teybe_course
+cd: no such file or directory: teybe_course
+erika@Ezequiels-MacBook-Pro trybe % cd trybe_course
+cd: no such file or directory: trybe_course
+erika@Ezequiels-MacBook-Pro trybe % ls -l
+total 16
+-rw-r--r--@ 1 erika  staff  1492 18 Fev 14:56 5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt
+drwxr-xr-x  5 erika  staff   160 18 Fev 17:10 Exercicios
+-rw-r--r--  1 erika  staff     0 18 Fev 18:45 README.md
+-rw-r--r--@ 1 erika  staff  1229 18 Fev 11:46 Renomear diretorio trybe.txt
+drwxr-xr-x  6 erika  staff   192 18 Fev 11:48 unix_tests
+erika@Ezequiels-MacBook-Pro trybe % cat >> readme.md
+A formação da Trybe é baseada no uso de metodologias ativas, ou seja, você aprenderá na prática, evoluindo com a mão na massa.
+currículo é construído com base no que o mercado de trabalho busca em profissionais de tecnologia.
+
+Domine as principais habilidades técnicas esperadas
+para desenvolvimento web:
+
+
+Javascript
+
+Node
+
+Git
+
+HTML
+
+Express.js
+
+Python
+
+CSS
+
+SQL
+
+ORM
+
+React
+
+NoSQL
+
+Algoritimos e estrutura de dados           
+^C
+erika@Ezequiels-MacBook-Pro trybe % git commit README.md
+code --wait: code: command not found
+error: There was a problem with the editor 'code --wait'.
+Please supply the message using either -m or -F option.
+erika@Ezequiels-MacBook-Pro trybe % git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+erika@Ezequiels-MacBook-Pro trybe % git add .
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+erika@Ezequiels-MacBook-Pro trybe % git commit -m "Adicionei o conteudo" 
+[master ec77488] Adicionei o conteudo
+ 1 file changed, 30 insertions(+)
+erika@Ezequiels-MacBook-Pro trybe % git log
+commit ec7748833d98dd33d73ffc4db012502fcc3f1633 (HEAD -> master)
+Author: Erika de Oliveira Lima <erikadeo.lima@hotmail.com>
+Date:   Fri Feb 18 19:26:47 2022 -0300
+
+    Adicionei o conteudo
+
+commit 8f32890eb42f426fa3570a5ffafeb6ab7fe43351 (origin/master)
+Author: Erika de Oliveira Lima <erikadeo.lima@hotmail.com>
+Date:   Fri Feb 18 18:46:08 2022 -0300
+
+    Initial commit
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+nothing to commit, working tree clean
+erika@Ezequiels-MacBook-Pro trybe % git push origin master
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 574 bytes | 52.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:erikadeolima/trybe-exercicios.git
+   8f32890..ec77488  master -> master
+erika@Ezequiels-MacBook-Pro trybe % history
+  178  git add .\ngit commit -m "Initial commit"
+  179  git remote add origin "git@github.com:erikadeolima/trybe-exercicios.git" 
+  180  git remote -v
+  181  git push origin master
+  182  cd teybe_course
+  183  cd trybe_course
+  184  ls -l
+  185  cat >> readme.md
+  186  git commit README.md
+  187  git add
+  188  git add .
+  189  git status
+  190  git commit -m "Adicionei o conteudo"
+  191  git log
+  192  git status
+  193  git push origin master
+erika@Ezequiels-MacBook-Pro trybe % 
