@@ -1,0 +1,107 @@
+Last login: Mon Feb 21 15:31:56 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % git push -u oringn master
+fatal: Not a git repository (or any of the parent directories): .git
+erika@Ezequiels-MacBook-Pro ~ % cd documents/trybe 
+erika@Ezequiels-MacBook-Pro trybe % git push -u origin master
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+To github.com:erikadeolima/trybe-exercicios.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:erikadeolima/trybe-exercicios.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+nothing to commit, working tree clean
+erika@Ezequiels-MacBook-Pro trybe % git inite                
+git: 'inite' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+erika@Ezequiels-MacBook-Pro trybe % git init 
+Reinitialized existing Git repository in /Users/erika/Documents/trybe/.git/
+erika@Ezequiels-MacBook-Pro trybe % git remote add origin git@github.com:erikadeolima/trybe-exercicios.git
+fatal: remote origin already exists.
+erika@Ezequiels-MacBook-Pro trybe %  git status
+On branch master
+nothing to commit, working tree clean
+erika@Ezequiels-MacBook-Pro trybe % git push -u oringin master
+fatal: 'oringin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+erika@Ezequiels-MacBook-Pro trybe % git push -u origin master 
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+To github.com:erikadeolima/trybe-exercicios.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:erikadeolima/trybe-exercicios.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+erika@Ezequiels-MacBook-Pro trybe % git pull
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:erikadeolima/trybe-exercicios
+   ec77488..b545e16  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+erika@Ezequiels-MacBook-Pro trybe % git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+erika@Ezequiels-MacBook-Pro trybe % git fetch
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+nothing to commit, working tree clean
+erika@Ezequiels-MacBook-Pro trybe % git fetch
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+erika@Ezequiels-MacBook-Pro trybe % 
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+nothing to commit, working tree clean
+erika@Ezequiels-MacBook-Pro trybe % git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+erika@Ezequiels-MacBook-Pro trybe % git push --set-upstream origin master
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+To github.com:erikadeolima/trybe-exercicios.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:erikadeolima/trybe-exercicios.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+erika@Ezequiels-MacBook-Pro trybe % git push -u origin master
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+Enter passphrase for key '/Users/erika/.ssh/id_rsa': 
+To github.com:erikadeolima/trybe-exercicios.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:erikadeolima/trybe-exercicios.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+erika@Ezequiels-MacBook-Pro trybe % 
