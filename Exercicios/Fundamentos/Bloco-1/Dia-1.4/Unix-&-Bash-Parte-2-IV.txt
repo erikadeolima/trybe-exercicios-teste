@@ -1,0 +1,303 @@
+Last login: Mon Feb 21 20:11:13 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % brew
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+erika@Ezequiels-MacBook-Pro ~ % install brew
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+erika@Ezequiels-MacBook-Pro ~ % install factor
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+erika@Ezequiels-MacBook-Pro ~ % install telnet
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+erika@Ezequiels-MacBook-Pro ~ % brew install coreutils
+Running `brew update --preinstall`...
+^Z
+zsh: suspended  brew install coreutils
+erika@Ezequiels-MacBook-Pro ~ % bg
+[1]  + continued  brew install coreutils
+erika@Ezequiels-MacBook-Pro ~ % brew install ==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+boost@1.76                               librasterlite2
+==> Updated Formulae
+Updated 208 formulae.
+==> Deleted Formulae
+carina                     hornetq                    path-extractor
+
+==> Downloading https://ghcr.io/v2/homebrew/core/gmp/manifests/6.2.1_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:e566452815d2ff
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/coreutils/manifests/9.0_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/coreutils/blobs/sha256:a5f2ae87
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Installing dependencies for coreutils: gmp
+==> Installing coreutils dependency: gmp
+==> Pouring gmp--6.2.1_1.big_sur.bottle.tar.gz
+bg🍺  /usr/local/Cellar/gmp/6.2.1_1: 21 files, 3.3MB
+==> Installing coreutils
+==> Pouring coreutils--9.0_1.big_sur.bottle.tar.gz
+==> Caveats
+Commands also provided by macOS and the commands dir, dircolors, vdir have been installed with the prefix "g".
+If you need to use these commands with their normal names, you can add a "gnubin" directory to your PATH with:
+  PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+==> Summary
+🍺  /usr/local/Cellar/coreutils/9.0_1: 480 files, 12.7MB
+==> Running `brew cleanup coreutils`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+b==> Caveats
+==> coreutils
+Commands also provided by macOS and the commands dir, dircolors, vdir have been installed with the prefix "g".
+If you need to use these commands with their normal names, you can add a "gnubin" directory to your PATH with:
+  PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+[1]  + done       brew install coreutils
+erika@Ezequiels-MacBook-Pro ~ % brew install telnet bg
+==> Tapping homebrew/cask
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask'...
+^Z
+zsh: suspended  brew install telnet bg
+erika@Ezequiels-MacBook-Pro ~ % bg
+[1]  + continued  brew install telnet bg
+erika@Ezequiels-MacBook-Pro ~ % remote: Enumerating objects: 623559, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+ps
+  PID TTY           TIME CMD
+ 2672 ttys000    0:00.09 -zsh
+ 4150 ttys000    0:01.31 /usr/local/Homebrew/Library/Homebrew/vendor/portable-r
+ 4321 ttys000    0:00.10 /usr/local/bin/git clone https://github.com/Homebrew/h
+ 4338 ttys000    0:01.43 /usr/local/git/libexec/git-core/git-remote-https origi
+ 4339 ttys000    0:04.22 /usr/local/git/libexec/git-core/git fetch-pack --state
+ 4340 ttys000    0:02.13 /usr/local/git/libexec/git-core/git index-pack --stdin
+erika@Ezequiels-MacBook-Pro ~ % brew install cmatrix
+==> Downloading https://ghcr.io/v2/homebrew/core/cmatrix/manifests/2.0
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/cmatrix/blobs/sha256:745b7d4d2d
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Pouring cmatrix--2.0.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/cmatrix/2.0: 10 files, 93.2KB
+==> Running `brew cleanup cmatrix`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2672 ttys000    0:00.10 -zsh
+ 4150 ttys000    0:01.31 /usr/local/Homebrew/Library/Homebrew/vendor/portable-r
+ 4321 ttys000    0:00.10 /usr/local/bin/git clone https://github.com/Homebrew/h
+ 4338 ttys000    0:04.14 /usr/local/git/libexec/git-core/git-remote-https origi
+ 4339 ttys000    0:04.63 /usr/local/git/libexec/git-core/git fetch-pack --state
+ 4340 ttys000    0:09.50 /usr/local/git/libexec/git-core/git index-pack --stdin
+erika@Ezequiels-MacBook-Pro ~ % pid 4340
+zsh: command not found: pid
+erika@Ezequiels-MacBook-Pro ~ % cmatrix
+erika@Ezequiels-MacBook-Pro ~ % brew install fortune
+==> Downloading https://ghcr.io/v2/homebrew/core/fortune/manifests/9708-4
+#=#=#                                                                         
+curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to ghcr.io:443 
+Error: fortune: Failed to download resource "fortune_bottle_manifest"
+Download failed: https://ghcr.io/v2/homebrew/core/fortune/manifests/9708-4
+erika@Ezequiels-MacBook-Pro ~ % brew install fortune
+==> Downloading https://ghcr.io/v2/homebrew/core/fortune/manifests/9708-4
+#=#=#                                                                         
+curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to ghcr.io:443 
+Error: fortune: Failed to download resource "fortune_bottle_manifest"
+Download failed: https://ghcr.io/v2/homebrew/core/fortune/manifests/9708-4
+erika@Ezequiels-MacBook-Pro ~ % error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 60
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+Error: Failure while executing; `git clone https://github.com/Homebrew/homebrew-cask /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask --origin=origin --template=` exited with 128.
+
+[1]  + exit 1     brew install telnet bg
+erika@Ezequiels-MacBook-Pro ~ % brew install fortune
+Running `brew update --preinstall`...
+^Z
+zsh: suspended  brew install fortune
+erika@Ezequiels-MacBook-Pro ~ % bg
+[1]  + continued  brew install fortune
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2672 ttys000    0:00.12 -zsh
+ 7601 ttys000    0:00.03 /bin/bash /usr/local/Homebrew/Library/Homebrew/brew.sh
+ 7733 ttys000    0:00.04 /bin/bash /usr/local/Homebrew/Library/Homebrew/brew.sh
+ 7926 ttys000    0:00.00 /bin/bash /usr/local/Homebrew/Library/Homebrew/brew.sh
+ 7955 ttys000    0:00.01 /usr/local/bin/git fetch --tags --force -q origin refs
+ 7956 ttys000    0:00.31 /usr/local/git/libexec/git-core/git-remote-https origi
+erika@Ezequiels-MacBook-Pro ~ % brew install fortune 
+==> Downloading https://ghcr.io/v2/homebrew/core/fortune/manifests/9708-4
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/fortune/blobs/sha256:de301856c
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/s
+######################################################################## 100.0%
+==> Pouring fortune--9708.big_sur.bottle.4.tar.gz
+🍺  /usr/local/Cellar/fortune/9708: 82 files, 2.5MB
+==> Running `brew cleanup fortune`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+erika@Ezequiels-MacBook-Pro ~ % fortune > fortune.txt
+erika@Ezequiels-MacBook-Pro ~ % cd fortune.txt
+cd: not a directory: fortune.txt
+erika@Ezequiels-MacBook-Pro ~ % ls fortune.txt
+fortune.txt
+erika@Ezequiels-MacBook-Pro ~ % less fortune.txt
+erika@Ezequiels-MacBook-Pro ~ % wc -w fortune.txt
+      52 fortune.txt
+erika@Ezequiels-MacBook-Pro ~ % ==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+textidote
+==> Updated Formulae
+Updated 73 formulae.
+
+brewWarning: fortune 9708 is already installed and up-to-date.
+To reinstall 9708, run:
+  brew reinstall fortune
+
+[1]  + done       brew install fortune
+erika@Ezequiels-MacBook-Pro ~ % brew install cowsay
+Running `brew update --preinstall`...
+==> Downloading https://ghcr.io/v2/homebrew/core/cowsay/manifests/3.04_1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/cowsay/blobs/sha256:422c58f10f
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/s
+######################################################################## 100.0%
+==> Pouring cowsay--3.04_1.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/cowsay/3.04_1: 63 files, 82.7KB
+==> Running `brew cleanup cowsay`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+erika@Ezequiels-MacBook-Pro ~ % cowsay "hello"
+ _______ 
+< hello >
+ ------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+erika@Ezequiels-MacBook-Pro ~ % cowsay fortune.txt
+ _____________ 
+< fortune.txt >
+ ------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+erika@Ezequiels-MacBook-Pro ~ % cowsay | cat fortune.txt
+This sad little lizard told me that he was a brontosaurus on his mother's
+side.  I did not laugh; people who boast of ancestry often have little
+else to sustain them.  Humoring them costs nothing and adds happiness in
+a world in which happiness is always in short supply.
+		-- Lazarus Long
+  
+^C
+erika@Ezequiels-MacBook-Pro ~ % get fortune.txt > cowsay
+zsh: command not found: get
+erika@Ezequiels-MacBook-Pro ~ % cat fortune.txt > cowsay
+erika@Ezequiels-MacBook-Pro ~ % cowsay cat fortune.txt
+ _________________ 
+< cat fortune.txt >
+ ----------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+erika@Ezequiels-MacBook-Pro ~ % cat cowsay fortune.txt
+This sad little lizard told me that he was a brontosaurus on his mother's
+side.  I did not laugh; people who boast of ancestry often have little
+else to sustain them.  Humoring them costs nothing and adds happiness in
+a world in which happiness is always in short supply.
+		-- Lazarus Long
+This sad little lizard told me that he was a brontosaurus on his mother's
+side.  I did not laugh; people who boast of ancestry often have little
+else to sustain them.  Humoring them costs nothing and adds happiness in
+a world in which happiness is always in short supply.
+		-- Lazarus Long
+erika@Ezequiels-MacBook-Pro ~ % fortune | cowsay
+ __________________________________ 
+< A bachelor is an unaltared male. >
+ ---------------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+erika@Ezequiels-MacBook-Pro ~ % gedit.bashrc
+zsh: command not found: gedit.bashrc
+erika@Ezequiels-MacBook-Pro ~ % cat fortune.txt | cowsay
+ _________________________________________ 
+/ This sad little lizard told me that he  \
+| was a brontosaurus on his mother's      |
+| side. I did not laugh; people who boast |
+| of ancestry often have little else to   |
+| sustain them. Humoring them costs       |
+| nothing and adds happiness in a world   |
+| in which happiness is always in short   |
+| supply.                                 |
+|                                         |
+\ -- Lazarus Long                         /
+ ----------------------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+erika@Ezequiels-MacBook-Pro ~ % factor 42
+42: 2 3 7
+erika@Ezequiels-MacBook-Pro ~ % rev fortune.txt
+s'rehtom sih no suruasotnorb a saw eh taht em dlot drazil elttil das sihT
+elttil evah netfo yrtsecna fo tsaob ohw elpoep ;hgual ton did I  .edis
+ni ssenippah sdda dna gnihton stsoc meht gniromuH  .meht niatsus ot esle
+.ylppus trohs ni syawla si ssenippah hcihw ni dlrow a
+gnoL surazaL --		
+erika@Ezequiels-MacBook-Pro ~ % telnet towel.blinkenlights.nl
+zsh: command not found: telnet
+erika@Ezequiels-MacBook-Pro ~ % telnet towel.blinkenlights.nl
+zsh: command not found: telnet
+erika@Ezequiels-MacBook-Pro ~ % telnet towel.blinkenlights.nl
+zsh: command not found: telnet
+erika@Ezequiels-MacBook-Pro ~ % tellnet towel.blinkenlights.nl
+zsh: command not found: tellnet
+erika@Ezequiels-MacBook-Pro ~ % 

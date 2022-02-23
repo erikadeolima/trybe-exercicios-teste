@@ -1,0 +1,97 @@
+Last login: Mon Feb 21 19:52:34 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.08 -zsh
+erika@Ezequiels-MacBook-Pro ~ % sleep 30 &
+[1] 2623
+erika@Ezequiels-MacBook-Pro ~ % 
+[1]  + done       sleep 30
+erika@Ezequiels-MacBook-Pro ~ % jobs
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.09 -zsh
+erika@Ezequiels-MacBook-Pro ~ % sleep 30
+^Z
+zsh: suspended  sleep 30
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.09 -zsh
+ 2642 ttys000    0:00.00 sleep 30
+erika@Ezequiels-MacBook-Pro ~ % kill sleep 30
+kill: illegal pid: sleep
+kill: kill 30 failed: no such process
+erika@Ezequiels-MacBook-Pro ~ % kill 2642
+[1]  + terminated  sleep 30                                                     
+erika@Ezequiels-MacBook-Pro ~ % sleep 30
+^Z
+zsh: suspended  sleep 30
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.10 -zsh
+ 2644 ttys000    0:00.00 sleep 30
+erika@Ezequiels-MacBook-Pro ~ % bg sleep 30
+[1]  + continued  sleep 30
+bg: job not found: 30
+erika@Ezequiels-MacBook-Pro ~ % 
+[1]  + done       sleep 30
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.10 -zsh
+erika@Ezequiels-MacBook-Pro ~ % sleep 30
+^Z
+zsh: suspended  sleep 30
+erika@Ezequiels-MacBook-Pro ~ % bg
+[1]  + continued  sleep 30
+erika@Ezequiels-MacBook-Pro ~ % sleep 300 
+[1]  + done       sleep 30
+erika@Ezequiels-MacBook-Pro ~ % sleep 300
+^Z
+zsh: suspended  sleep 300
+erika@Ezequiels-MacBook-Pro ~ % bg
+[1]  + continued  sleep 300
+erika@Ezequiels-MacBook-Pro ~ % sleep 200 | sleep 100
+^Z
+zsh: suspended  sleep 200 | sleep 100
+erika@Ezequiels-MacBook-Pro ~ % bg
+[2]  - continued  sleep 200 | sleep 100
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.12 -zsh
+ 2651 ttys000    0:00.00 sleep 300
+ 2652 ttys000    0:00.00 sleep 200
+ 2653 ttys000    0:00.00 sleep 100
+erika@Ezequiels-MacBook-Pro ~ % sleep 100
+^Z
+zsh: suspended  sleep 100
+erika@Ezequiels-MacBook-Pro ~ % bg
+[3]  - continued  sleep 100
+erika@Ezequiels-MacBook-Pro ~ % kill 2651 2652 2653
+[2]    terminated  sleep 200 | sleep 100                                        
+[1]  + terminated  sleep 300
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.13 -zsh
+ 2656 ttys000    0:00.00 sleep 100
+erika@Ezequiels-MacBook-Pro ~ % kill 2656
+[3]  + terminated  sleep 100                                                    
+erika@Ezequiels-MacBook-Pro ~ % ps
+  PID TTY           TIME CMD
+ 2615 ttys000    0:00.13 -zsh
+erika@Ezequiels-MacBook-Pro ~ % history
+  473  ps
+  474  bg sleep 30
+  475  ps
+  476  sleep 30
+  477  bg
+  478  sleep 300
+  479  bg
+  480  sleep 200 | sleep 100
+  481  bg
+  482  ps
+  483  sleep 100
+  484  bg
+  485  kill 2651 2652 2653
+  486  ps
+  487  kill 2656
+  488  ps
+erika@Ezequiels-MacBook-Pro ~ % 
