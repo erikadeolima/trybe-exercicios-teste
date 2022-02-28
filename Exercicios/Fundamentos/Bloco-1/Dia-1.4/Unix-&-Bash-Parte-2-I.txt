@@ -1,0 +1,102 @@
+Last login: Mon Feb 21 10:53:34 on ttys001
+erika@Ezequiels-MacBook-Pro ~ % cd douments/trybe/exercicios/fundamentos/unix.tests
+cd: no such file or directory: douments/trybe/exercicios/fundamentos/unix.tests
+erika@Ezequiels-MacBook-Pro ~ % cd douments/trybe/exercicios/fundamentos/unix_tests
+cd: no such file or directory: douments/trybe/exercicios/fundamentos/unix_tests
+erika@Ezequiels-MacBook-Pro ~ % cd douments/trybe/exercicios/fundamentos/bloco1/unix_tests 
+cd: no such file or directory: douments/trybe/exercicios/fundamentos/bloco1/unix_tests
+erika@Ezequiels-MacBook-Pro ~ % cd documents/trybe/exercicios/fundamentos/bloco1/unix_tests
+erika@Ezequiels-MacBook-Pro unix_tests % cat >> skills2.txt       
+internet
+unix
+Bash
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % cat >> skills2.txt
+Pyhton
+VsCode
+Node.js
+Java Script
+SQL
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % wc -l skills2.txt
+       8 skills2.txt
+erika@Ezequiels-MacBook-Pro unix_tests % head -3 sort > skills2.txt cat >> to_skills.txt
+head: sort: No such file or directory
+head: cat: No such file or directory
+erika@Ezequiels-MacBook-Pro unix_tests % cat >> top_skills.txt | sort > head -3
+sort: invalid option -- 3
+Usage: sort [-bcCdfigMmnrsuz] [-kPOS1[,POS2] ... ] [+POS1 [-POS2]] [-S memsize] [-T tmpdir] [-t separator] [-o outfile] [--batch-size size] [--files0-from file] [--heapsort] [--mergesort] [--radixsort] [--qsort] [--mmap] [--parallel thread_no] [--human-numeric-sort] [--version-sort] [--random-sort [--random-source file]] [--compress-program program] [file ...]
+^C  
+erika@Ezequiels-MacBook-Pro unix_tests % cat >> top_skills.txt sort > head -3 skills2.txt
+cat: sort: No such file or directory
+cat: -3: No such file or directory
+erika@Ezequiels-MacBook-Pro unix_tests % sort > skills2.txt | cat >> top_skills.txt
+
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % sort skills2.txt | head -3 | cat > top_skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % less top_skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % head top_skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % wc -l top_skills.txt
+       0 top_skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % wc -l skills2.txt   
+       0 skills2.txt
+erika@Ezequiels-MacBook-Pro unix_tests % cat >> skills2.txt
+Internet 
+Unix
+Bash
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % cat >> skills2.txt
+yhton
+VsCode
+Node.js
+Java Script
+SQL
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % sort skills2.txt | head -3 | cat > top_skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % wc -1 top_skills.txt
+wc: illegal option -- 1
+usage: wc [-clmw] [file ...]
+erika@Ezequiels-MacBook-Pro unix_tests % wc -l top_skills.txt
+       3 top_skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % less top_skills.txt
+erika@Ezequiels-MacBook-Pro unix_tests % cat > phrases2.txt
+"Um homem que ousa desperdiçar uma hora ainda não descobriu o valor da vida."
+"Um homem da ciência não deve ter desejos, nem afeições, somente um mero coração de pedra."
+"Conseguimos realizar nossos propósitos, economizando os minutos."
+"Para ser um bom observador é preciso ser um bom teórico."
+"Se a miséria dos nossos pobres não fosse causada pelas leis da natureza, mas pelas nossas instituições, grande seria no nosso pecado."
+"Me transformei num tipo de máquina de observar fatos e formular conclusões."
+"Não gostamos que os animais, a quem tornamos nossos escravos, sejam considerados nossos iguais."
+"A compaixão para com os animais é das mais nobres virtudes da natureza humana."
+"Devemos, no entanto, reconhecer, como me parece, que o homem com todas as suas nobres qualidades... ainda sofre em sua prisão corpórea a indelével marca de sua humilde origem."
+"Na sobrevivência dos indivíduos e raças favorecidas, durante a luta constante e recorrente pela existência, vemos uma foerosa e incessante de seleção."
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % wc -l less /br phrases2.txt
+wc: less: open: No such file or directory
+wc: /br: open: No such file or directory
+      10 phrases2.txt
+      10 total
+erika@Ezequiels-MacBook-Pro unix_tests % wc -l | grep br phrases2.txt
+"Um homem que ousa desperdiçar uma hora ainda não descobriu o valor da vida."
+"Se a miséria dos nossos pobres não fosse causada pelas leis da natureza, mas pelas nossas instituições, grande seria no nosso pecado."
+"A compaixão para com os animais é das mais nobres virtudes da natureza humana."
+"Devemos, no entanto, reconhecer, como me parece, que o homem com todas as suas nobres qualidades... ainda sofre em sua prisão corpórea a indelével marca de sua humilde origem."
+"Na sobrevivência dos indivíduos e raças favorecidas, durante a luta constante e recorrente pela existência, vemos uma forma poderosa e incessante de seleção."
+^C  
+erika@Ezequiels-MacBook-Pro unix_tests % wc -l | grep -iv br phrases2.txt
+"Um homem da ciência não deve ter desejos, nem afeições, somente um mero coração de pedra."
+"Conseguimos realizar nossos propósitos, economizando os minutos."
+"Para ser um bom observador é preciso ser um bom teórico."
+"Me transformei num tipo de máquina de observar fatos e formular conclusões."
+"Não gostamos que os animais, a quem tornamos nossos escravos, sejam considerados nossos iguais."
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % cat >> phrases2.txt
+Polonesia
+Camarões
+^C
+erika@Ezequiels-MacBook-Pro unix_tests % cat phrases2.txt countries.txt >> bunch_of_things.txt
+erika@Ezequiels-MacBook-Pro unix_tests % sort bunch_of_thinhs.txt >> bunch_of_things_ordenado.txt
+sort: No such file or directory
+erika@Ezequiels-MacBook-Pro unix_tests % sort bunch_of_things.txt >> bunch_of_things_ordenado.txt
+erika@Ezequiels-MacBook-Pro unix_tests % less bunch_of_things_ordenado.txt
+erika@Ezequiels-MacBook-Pro unix_tests % 

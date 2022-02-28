@@ -1,0 +1,153 @@
+Last login: Mon Feb 21 14:56:03 on ttys000
+erika@Ezequiels-MacBook-Pro ~ % ls
+Applications		Library			Public
+Desktop			Movies			trybe_skills.txt
+Documents		Music
+Downloads		Pictures
+erika@Ezequiels-MacBook-Pro ~ % git status
+fatal: Not a git repository (or any of the parent directories): .git
+erika@Ezequiels-MacBook-Pro ~ % cd documents/trybe
+erika@Ezequiels-MacBook-Pro trybe % git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt
+	deleted:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Chave SSH git to github
+	deleted:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração
+	deleted:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração parte II
+	deleted:    Exercicios/Fundamentos/bloco-1-dia-03/Unix & Bash - Parte 1 
+	deleted:    Exercicios/Fundamentos/bloco-1-dia-04/Unix_Bash_Dia2
+	deleted:    Exercicios/trybe-skills.txt
+	deleted:    unix_tests/backup/trybe_backup.txt
+	deleted:    unix_tests/countries.txt
+	deleted:    unix_tests/skills2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Exercicios/Fundamentos/Bloco1/
+	Exercicios/Fundamentos/Bloco2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+erika@Ezequiels-MacBook-Pro trybe % 
+erika@Ezequiels-MacBook-Pro trybe % git log
+commit ec7748833d98dd33d73ffc4db012502fcc3f1633 (HEAD -> master, origin/master)
+Author: Erika de Oliveira Lima <erikadeo.lima@hotmail.com>
+Date:   Fri Feb 18 19:26:47 2022 -0300
+
+    Adicionei o conteudo
+
+commit 8f32890eb42f426fa3570a5ffafeb6ab7fe43351
+Author: Erika de Oliveira Lima <erikadeo.lima@hotmail.com>
+Date:   Fri Feb 18 18:46:08 2022 -0300
+
+    Initial commit
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt
+	deleted:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Chave SSH git to github
+	deleted:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração
+	deleted:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração parte II
+	deleted:    Exercicios/Fundamentos/bloco-1-dia-03/Unix & Bash - Parte 1 
+	deleted:    Exercicios/Fundamentos/bloco-1-dia-04/Unix_Bash_Dia2
+	deleted:    Exercicios/trybe-skills.txt
+	deleted:    unix_tests/backup/trybe_backup.txt
+	deleted:    unix_tests/countries.txt
+	deleted:    unix_tests/skills2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Exercicios/Fundamentos/Bloco1/
+	Exercicios/Fundamentos/Bloco2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+erika@Ezequiels-MacBook-Pro trybe % git add .
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	renamed:    Exercicios/Fundamentos/bloco-1-dia-03/Unix & Bash - Parte 1  -> Exercicios/Fundamentos/Bloco1/bloco-1-dia-03/Unix & Bash - Parte 1  .txt
+	new file:   Exercicios/Fundamentos/Bloco1/bloco-1-dia-03/Unix & Bash - Parte1 I.txt
+	new file:   Exercicios/Fundamentos/Bloco1/bloco-1-dia-03/Unix & Bash - Parte1 II.txt
+	new file:   Exercicios/Fundamentos/Bloco1/bloco-1-dia-04/Clone Dietorio GitHub
+	new file:   Exercicios/Fundamentos/Bloco1/bloco-1-dia-04/Unix & Bash - Parte2 I.txt
+	new file:   Exercicios/Fundamentos/Bloco1/bloco-1-dia-04/Unix & Bash - Parte2 II.txt
+	renamed:    Exercicios/Fundamentos/bloco-1-dia-04/Unix_Bash_Dia2 -> Exercicios/Fundamentos/Bloco1/bloco-1-dia-04/Unix_Bash_Dia2
+	renamed:    Exercicios/trybe-skills.txt -> Exercicios/Fundamentos/Bloco1/trybe-skills.txt
+	new file:   Exercicios/Fundamentos/Bloco1/unix_tests/bunch_of_things.txt
+	new file:   Exercicios/Fundamentos/Bloco1/unix_tests/bunch_of_things_ordenado.txt
+	renamed:    unix_tests/countries.txt -> Exercicios/Fundamentos/Bloco1/unix_tests/countries.txt
+	renamed:    unix_tests/backup/trybe_backup.txt -> Exercicios/Fundamentos/Bloco1/unix_tests/empty.pdf
+	renamed:    unix_tests/skills2.txt -> Exercicios/Fundamentos/Bloco1/unix_tests/empty.tbt
+	new file:   Exercicios/Fundamentos/Bloco1/unix_tests/phrases.txt
+	new file:   Exercicios/Fundamentos/Bloco1/unix_tests/phrases2.txt
+	new file:   Exercicios/Fundamentos/Bloco1/unix_tests/skills2.txt
+	new file:   Exercicios/Fundamentos/Bloco1/unix_tests/top_skills.txt
+	renamed:    5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt -> Exercicios/Fundamentos/Bloco2/5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt
+	renamed:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Chave SSH git to github -> Exercicios/Fundamentos/Bloco2/Parte 1 - Chave SSH git to github
+	renamed:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração -> Exercicios/Fundamentos/Bloco2/Parte 1 - Instalação e configuração
+	renamed:    Exercicios/Fundamentos/Bloco 2/Parte 1 - Instalação e configuração parte II -> Exercicios/Fundamentos/Bloco2/Parte 1 - Instalação e configuração parte II
+	new file:   Exercicios/Fundamentos/Bloco2/Parte 1 - Instalação e configuração parte III
+
+erika@Ezequiels-MacBook-Pro trybe % git commit -m "Atualiza o diretorio"
+[master 58b34a0] Atualiza o diretorio
+ 22 files changed, 1171 insertions(+)
+ rename Exercicios/Fundamentos/{bloco-1-dia-03/Unix & Bash - Parte 1  => Bloco1/bloco-1-dia-03/Unix & Bash - Parte 1  .txt} (100%)
+ create mode 100644 Exercicios/Fundamentos/Bloco1/bloco-1-dia-03/Unix & Bash - Parte1 I.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco1/bloco-1-dia-03/Unix & Bash - Parte1 II.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco1/bloco-1-dia-04/Clone Dietorio GitHub
+ create mode 100644 Exercicios/Fundamentos/Bloco1/bloco-1-dia-04/Unix & Bash - Parte2 I.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco1/bloco-1-dia-04/Unix & Bash - Parte2 II.txt
+ rename Exercicios/Fundamentos/{ => Bloco1}/bloco-1-dia-04/Unix_Bash_Dia2 (100%)
+ rename Exercicios/{ => Fundamentos/Bloco1}/trybe-skills.txt (100%)
+ create mode 100644 Exercicios/Fundamentos/Bloco1/unix_tests/bunch_of_things.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco1/unix_tests/bunch_of_things_ordenado.txt
+ rename {unix_tests => Exercicios/Fundamentos/Bloco1/unix_tests}/countries.txt (100%)
+ rename unix_tests/backup/trybe_backup.txt => Exercicios/Fundamentos/Bloco1/unix_tests/empty.pdf (100%)
+ rename unix_tests/skills2.txt => Exercicios/Fundamentos/Bloco1/unix_tests/empty.tbt (100%)
+ create mode 100644 Exercicios/Fundamentos/Bloco1/unix_tests/phrases.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco1/unix_tests/phrases2.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco1/unix_tests/skills2.txt
+ create mode 100644 Exercicios/Fundamentos/Bloco1/unix_tests/top_skills.txt
+ rename 5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt => Exercicios/Fundamentos/Bloco2/5_MOTIVOS_PARA_VOCE_APRENDER_JAVASCRIPT mesh palavras erika.txt (100%)
+ rename Exercicios/Fundamentos/{Bloco 2 => Bloco2}/Parte 1 - Chave SSH git to github (100%)
+ rename Exercicios/Fundamentos/{Bloco 2 => Bloco2}/Parte 1 - Instalação e configuração (100%)
+ rename Exercicios/Fundamentos/{Bloco 2 => Bloco2}/Parte 1 - Instalação e configuração parte II (100%)
+ create mode 100644 Exercicios/Fundamentos/Bloco2/Parte 1 - Instalação e configuração parte III
+erika@Ezequiels-MacBook-Pro trybe % git status
+On branch master
+nothing to commit, working tree clean
+erika@Ezequiels-MacBook-Pro trybe % git log
+commit 58b34a0f66baa97772dbc54e4bd6b34fca44575f (HEAD -> master)
+Author: Erika de Oliveira Lima <erikadeo.lima@hotmail.com>
+Date:   Mon Feb 21 15:19:01 2022 -0300
+
+    Atualiza o diretorio
+
+commit ec7748833d98dd33d73ffc4db012502fcc3f1633 (origin/master)
+Author: Erika de Oliveira Lima <erikadeo.lima@hotmail.com>
+Date:   Fri Feb 18 19:26:47 2022 -0300
+
+    Adicionei o conteudo
+
+commit 8f32890eb42f426fa3570a5ffafeb6ab7fe43351
+Author: Erika de Oliveira Lima <erikadeo.lima@hotmail.com>
+Date:   Fri Feb 18 18:46:08 2022 -0300
+
+    Initial commit
+erika@Ezequiels-MacBook-Pro trybe % q
+zsh: command not found: q
+erika@Ezequiels-MacBook-Pro trybe % 
